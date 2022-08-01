@@ -1,0 +1,34 @@
+{
+  "name": "dtnl-nodejs-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint --ignore-path .gitignore --ext .ts .",
+    "script:order-create": "ts-node --files ./src/scripts/order/order-create.ts",
+    "script:product-create": "ts-node --files ./src/scripts/product/product-create.ts",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "engines": {
+    "node": "14.x"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@commercetools/platform-sdk": "2.7.0",
+    "dotenv": "10.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "8.2.0",
+    "@types/jest": "27.0.1",
+    "@typescript-eslint/eslint-plugin": "4.31.0",
+    "@typescript-eslint/parser": "4.31.0",
+    "eslint": "7.32.0",
+    "jest": "27.1.1",
+    "ts-jest": "27.0.5",
+    "ts-node": "10.2.1",
+    "typescript": "4.1.5"
+  }
+}
