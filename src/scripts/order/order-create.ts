@@ -1,6 +1,6 @@
 import { Order as CtOrder, OrderState as CtOrderState, ShipmentState } from '@commercetools/platform-sdk';
 import * as dotenv from 'dotenv';
-import { getOrderById } from '../../commercetools/order';
+import { getOrderById } from 'src/commercetools/order';
 import { roundAmountOnTwoDecimals, transformCentAmountToAmount } from './helpers/helper';
 import { setOrderLines } from './helpers/order-line';
 import { Order, OrderLine, OrderState } from './types/order-type';
